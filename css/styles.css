@@ -1,0 +1,52 @@
+body {
+    background: #E2DED2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clock {
+    width: 300px;
+    margin: 40px auto;
+    
+    font-size: 0;
+    text-align: center;
+}
+
+.block {
+    width: 24%;
+    padding-bottom: 18%;
+    border: 3px solid #EEEBE2;
+    border-radius: 5px;
+    margin: 0.5%;
+    box-shadow: 0 0 4px #DBD6C3;
+    display: inline-block;
+    
+    background: #DBD6C3;
+    
+    overflow: hidden;
+}
+
+.seconds .block {
+    border-radius: 100%;
+}
+
+.mins-5 .block {
+    width: 8%;
+}
+
+.block.red {
+    background: #E66C6C;
+}
+
+.block.yellow {
+    background: #EDEB87;
+}
