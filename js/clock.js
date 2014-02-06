@@ -111,7 +111,7 @@ BerlinClock = function()
     }
     
     
-    //add a new light of the specified colour to the specified row
+    //display the real time
     function displayTime()
     {
         var hours = time.getHours();
