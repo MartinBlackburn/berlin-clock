@@ -27,6 +27,9 @@ BerlinClock = function()
         
         //hours lights
         setHoursLights();
+        
+        //update real time
+        displayTime();
     }, 1000);
     
     
@@ -105,6 +108,24 @@ BerlinClock = function()
                 addLight('off', hours5Row);
             }
         }
+    }
+    
+    
+    //add a new light of the specified colour to the specified row
+    function displayTime()
+    {
+        var hours = time.getHours();
+        var minutes = time.getMinutes();
+        
+        if(hours < 10) {
+            hours = "0" + hours;
+        }
+        
+        if(minutes < 10) {
+            hours = "0" + minutes;
+        }
+        
+        $('.time').text(hours + ":" + minutes);
     }
     
     

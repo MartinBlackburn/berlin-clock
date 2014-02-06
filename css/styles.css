@@ -50,3 +50,12 @@ body {
 .block.yellow {
     background: #EDEB87;
 }
+
+.time {
+	font-family: Arial, sans-serif;
+    color: #5C5B59;
+    text-shadow: 1px 1px 1px #fff;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1em;
+}
